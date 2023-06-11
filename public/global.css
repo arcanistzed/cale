@@ -1,4 +1,4 @@
 @font-face {
     font-family: "Garet Book";
-    src: local("Garet Book"), url("/fonts/Garet-Book.woff2") format("woff2");
+    src: local("Garet Book"), url("fonts/Garet-Book.woff2") format("woff2");
 }

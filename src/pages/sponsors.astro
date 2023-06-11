@@ -4,12 +4,11 @@ import { t, changeLanguage, setDefaultNamespace } from "i18next";
 import { Icon } from "astro-icon";
 
 changeLanguage("en");
-
 setDefaultNamespace("sponsors");
 ---
 
 <Layout title={t("title")} description={t("description")}>
-	<main class="mx-auto flex h-full max-w-2xl flex-col gap-8 p-4">
+	<main class="mx-auto flex h-full w-full max-w-2xl flex-col gap-8 p-4">
 		<h1 class="text-4xl font-bold leading-relaxed">Sponsors</h1>
 		<p class="leading-relaxed">
 			Thank you for considering sponsorship opportunities for the Conference on Advocacy and Leadership in
@@ -55,89 +54,91 @@ setDefaultNamespace("sponsors");
 			<b>Bronze (&lt;$999 CAD):</b> Receive recognition with a small-sized logo, website link, social media shoutouts,
 			and conference exposure.
 		</p>
-		<table>
-			<thead>
-				<tr class="border-b border-black">
-					<th class="border-r border-black"></th>
-					<th>Bronze (&lt;$999 CAD)</th>
-					<th>Silver ($1,000-$4,999 CAD)</th>
-					<th>Gold ($5,000-$7,499 CAD)</th>
-					<th>Platinum (&gt;$7,500 CAD)</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Logo on Website/Banners/Packages</td>
-					<td class="px-4 py-2 text-center">Small</td>
-					<td class="px-4 py-2 text-center">Medium</td>
-					<td class="px-4 py-2 text-center">Large</td>
-					<td class="px-4 py-2 text-center">Largest</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Company Website Link on CALE Website</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Conference Shoutouts</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Social Media Recognition</td>
-					<td class="px-4 py-2 text-center">Group Post</td>
-					<td class="px-4 py-2 text-center">Group Post</td>
-					<td class="px-4 py-2 text-center">Individual Post</td>
-					<td class="px-4 py-2 text-center">Individual Post</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Career Fair Tabling</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">One Day</td>
-					<td class="px-4 py-2 text-center">Both Days</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Business Cards in Swag Bags</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">✔</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Business Cards + Swag in Bags</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Keynote Speaker Opportunity</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-				<tr class="border-b border-black">
-					<td class="border-r border-black px-4 py-2">Tickets to CALE Gala</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">2 Tickets</td>
-				</tr>
-				<tr>
-					<td class="border-r border-black px-4 py-2">Product Placement (for food/bev sponsors)</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">❌</td>
-					<td class="px-4 py-2 text-center">✔</td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="w-full overflow-x-auto">
+			<table>
+				<thead>
+					<tr>
+						<th class="border-r border-black"></th>
+						<th>Bronze</th>
+						<th>Silver</th>
+						<th>Gold</th>
+						<th>Platinum</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Logo on Website / Banners / Packages</td>
+						<td class="px-4 py-2 text-center">Small</td>
+						<td class="px-4 py-2 text-center">Medium</td>
+						<td class="px-4 py-2 text-center">Large</td>
+						<td class="px-4 py-2 text-center">Largest</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Company Website Link on CALE Website</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Conference Shoutouts</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Social Media Recognition</td>
+						<td class="px-4 py-2 text-center">Group Post</td>
+						<td class="px-4 py-2 text-center">Group Post</td>
+						<td class="px-4 py-2 text-center">Individual Post</td>
+						<td class="px-4 py-2 text-center">Individual Post</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Career Fair Tabling</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">One Day</td>
+						<td class="px-4 py-2 text-center">Both Days</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Business Cards in Swag Bags</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">✔</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Business Cards + Swag in Bags</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Keynote Speaker Opportunity</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+					<tr class="border-b border-black">
+						<td class="border-r border-black px-4 py-2">Tickets to CALE Gala</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">2 Tickets</td>
+					</tr>
+					<tr>
+						<td class="border-r border-black px-4 py-2">Product Placement (for food/bev sponsors)</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">❌</td>
+						<td class="px-4 py-2 text-center">✔</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<h2 class="text-2xl font-bold leading-relaxed">How to Become a Sponsor?</h2>
 		<p class="leading-relaxed">
 			If you are interested in supporting CALE 2024 as a sponsor, we encourage you to reach out to our sponsorship

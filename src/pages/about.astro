@@ -4,12 +4,11 @@ import { t, changeLanguage, setDefaultNamespace } from "i18next";
 import { Icon } from "astro-icon";
 
 changeLanguage("en");
-
 setDefaultNamespace("about");
 ---
 
 <Layout title={t("title")} description={t("description")}>
-	<main class="mx-auto flex h-full max-w-2xl flex-col gap-4 p-4">
+	<main class="mx-auto flex h-full w-full max-w-2xl flex-col gap-4 p-4">
 		<h1 class="text-4xl font-bold leading-relaxed">About CALE 2024</h1>
 		<p class="leading-relaxed">
 			Welcome to the About page of the Conference on Advocacy and Leadership in Engineering (CALE) 2024! This page

@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
+import { Icon } from "astro-icon";
+
+changeLanguage("en");
+
+setDefaultNamespace("about");
+---
+
+<Layout title={t("title")} description={t("description")}>
+	<main class="mx-auto flex h-full max-w-2xl flex-col gap-8 p-4">
+		<h1 class="text-4xl font-bold leading-relaxed">Meet the Team</h1>
+		<p class="leading-relaxed">
+			The Conference on Advocacy and Leadership in Engineering (CALE) is made possible by a dedicated team of
+			passionate individuals who are committed to organizing a successful event and creating a platform for
+			engineering leadership and advocacy.
+		</p>
+	</main>
+</Layout>

@@ -1,0 +1,159 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
+import { Icon } from "astro-icon";
+
+changeLanguage("en");
+
+setDefaultNamespace("about");
+---
+
+<Layout title={t("title")} description={t("description")}>
+	<main class="mx-auto flex h-full max-w-2xl flex-col gap-8 p-4">
+		<h1 class="text-4xl font-bold leading-relaxed">Sponsors</h1>
+		<p class="leading-relaxed">
+			Thank you for considering sponsorship opportunities for the Conference on Advocacy and Leadership in
+			Engineering (CALE) 2024. By becoming a sponsor, you have the opportunity to make a significant impact on the
+			development of future engineering leaders and advocate for positive change within the engineering community.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">Why Sponsor CALE?</h2>
+		<p class="leading-relaxed">
+			Sponsoring CALE offers numerous benefits and opportunities to connect with the leaders of tomorrow. By
+			supporting the conference, your organization will:
+		</p>
+		<p class="leading-relaxed">
+			<b>Network with Future Leaders:</b> Gain direct access to some of the most promising future engineering leaders
+			across Ontario, establishing valuable relationships and connections.
+		</p>
+		<p class="leading-relaxed">
+			<b>Align with Advocacy & Leadership:</b> Demonstrate your commitment to supporting leadership development and
+			advocacy within the engineering field, aligning your business with these crucial values in a visible way.
+		</p>
+		<p class="leading-relaxed">
+			<b>Brand Exposure and Recognition:</b> Increase brand awareness among a relevant audience of future leaders through
+			your company's logo displayed on various conference materials. Additionally, there may be opportunities for keynote
+			speaking, allowing you to showcase your expertise and establish thought leadership.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">Sponsorship Tiers</h2>
+		<p class="leading-relaxed">
+			We offer multiple sponsorship tiers, allowing you to choose the level of involvement that best aligns with
+			your organization's goals and resources. The sponsorship tiers for CALE 2024 are as follows:
+		</p>
+		<p class="leading-relaxed">
+			<b>Platinum (&gt;$7,500 CAD):</b> Enjoy the highest level of visibility and recognition, including prominent
+			logo placement, website link, keynote speaking opportunity, gala tickets, and more.
+		</p>
+		<p class="leading-relaxed">
+			<b>Gold ($5,000-$7,499 CAD):</b> Benefit from substantial exposure with a large-sized logo, website link, social
+			media recognition, and the chance to participate in the career fair.
+		</p>
+		<p class="leading-relaxed">
+			<b>Silver ($1,000-$4,999 CAD):</b> Gain medium-sized logo visibility, website link, social media recognition,
+			and conference shoutouts.
+		</p>
+		<p class="leading-relaxed">
+			<b>Bronze (&lt;$999 CAD):</b> Receive recognition with a small-sized logo, website link, social media shoutouts,
+			and conference exposure.
+		</p>
+		<table>
+			<thead>
+				<tr class="border-b border-black">
+					<th class="border-r border-black"></th>
+					<th>Bronze (&lt;$999 CAD)</th>
+					<th>Silver ($1,000-$4,999 CAD)</th>
+					<th>Gold ($5,000-$7,499 CAD)</th>
+					<th>Platinum (&gt;$7,500 CAD)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Logo on Website/Banners/Packages</td>
+					<td class="px-4 py-2 text-center">Small</td>
+					<td class="px-4 py-2 text-center">Medium</td>
+					<td class="px-4 py-2 text-center">Large</td>
+					<td class="px-4 py-2 text-center">Largest</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Company Website Link on CALE Website</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Conference Shoutouts</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Social Media Recognition</td>
+					<td class="px-4 py-2 text-center">Group Post</td>
+					<td class="px-4 py-2 text-center">Group Post</td>
+					<td class="px-4 py-2 text-center">Individual Post</td>
+					<td class="px-4 py-2 text-center">Individual Post</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Career Fair Tabling</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">One Day</td>
+					<td class="px-4 py-2 text-center">Both Days</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Business Cards in Swag Bags</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">✔</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Business Cards + Swag in Bags</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Keynote Speaker Opportunity</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+				<tr class="border-b border-black">
+					<td class="border-r border-black px-4 py-2">Tickets to CALE Gala</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">2 Tickets</td>
+				</tr>
+				<tr>
+					<td class="border-r border-black px-4 py-2">Product Placement (for food/bev sponsors)</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">❌</td>
+					<td class="px-4 py-2 text-center">✔</td>
+				</tr>
+			</tbody>
+		</table>
+		<h2 class="text-2xl font-bold leading-relaxed">How to Become a Sponsor?</h2>
+		<p class="leading-relaxed">
+			If you are interested in supporting CALE 2024 as a sponsor, we encourage you to reach out to our sponsorship
+			team. Let us know which tier you are interested in and how you would like to contribute. We accept various
+			forms of sponsorship, including financial contributions, in-kind support, and resources.
+		</p>
+		<p class="leading-relaxed">
+			To initiate the sponsorship process or for any inquiries, please contact us at
+			<a href="mailto:cale@essco.ca" class="text-blue-500" target="_blank" rel="noopener noreferrer">
+				cale@essco.ca
+			</a>. We will guide you through the process, answer your questions, and provide additional details.
+		</p>
+		<p class="leading-relaxed">
+			We appreciate your consideration and support in empowering the future leaders of the engineering field.
+			Together, let's make a difference and foster a thriving community of advocacy and leadership within
+			engineering.
+		</p>
+	</main>
+</Layout>

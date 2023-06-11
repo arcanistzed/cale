@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
+import { Icon } from "astro-icon";
+
+changeLanguage("en");
+
+setDefaultNamespace("about");
+---
+
+<Layout title={t("title")} description={t("description")}>
+	<main class="mx-auto flex h-full max-w-2xl flex-col gap-4 p-4">
+		<h1 class="text-4xl font-bold leading-relaxed">About CALE 2024</h1>
+		<p class="leading-relaxed">
+			Welcome to the About page of the Conference on Advocacy and Leadership in Engineering (CALE) 2024! This page
+			provides you with a deeper understanding of the purpose, history, and vision behind CALE.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">Our Mission</h2>
+		<p class="leading-relaxed">
+			At CALE, we are dedicated to promoting leadership, advocacy, and community engagement within the engineering
+			field. We believe in empowering future engineering leaders by providing them with valuable opportunities,
+			resources, and connections to excel in their academic and professional journeys.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">
+			About <a href="https://essco.ca/" target="_blank" rel="noopener noreferrer" class="text-blue-500">
+				ESSCO
+				<Icon pack="mdi" name="open-in-new" class="inline h-4 align-baseline" />
+			</a>
+		</h2>
+		<p class="leading-relaxed">
+			The Engineering Student Society Council of Ontario (ESSCO) is an umbrella organization that represents
+			engineering societies from 17 universities across Ontario. ESSCO acts as a liaison between professional
+			organizations and the student community, working tirelessly to ensure that the opinions and needs of
+			Ontario's engineering students are heard and accounted for. ESSCO also provides invaluable leadership
+			development opportunities and a platform for growth.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">
+			About <a href="https://essaeg.ca/" target="_blank" rel="noopener noreferrer" class="text-blue-500">
+				uOttawa ESS
+				<Icon pack="mdi" name="open-in-new" class="inline h-4 align-baseline" />
+			</a>
+		</h2>
+		<p class="leading-relaxed">
+			The University of Ottawa Engineering Student Society (uOttawa ESS) is proud to collaborate with ESSCO in
+			hosting CALE 2024. With a strong history of organizing impactful events, including the Ontario Engineering
+			Competition and previous conferences on advocacy and leadership in engineering, uOttawa ESS is committed to
+			enhancing leadership and advocacy within the engineering community.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">CALE Vision</h2>
+		<p class="leading-relaxed">
+			CALE is more than just a conference—it's an arena for change, leadership, and advocacy. Our vision is to
+			unite student leaders across 17 member schools in Ontario, amplifying their voices and propelling progress
+			in engineering. Through a diverse range of events, including workshops, career fairs, general meetings, and
+			speaker series, CALE provides a platform for students to experience firsthand the power of leadership in
+			sparking positive change.
+		</p>
+		<h2 class="text-2xl font-bold leading-relaxed">Theme "Make it happen, Make it matter"</h2>
+		<p class="leading-relaxed">
+			Our theme encapsulates the essence of CALE. "Make it happen" represents the influence and leadership that
+			student leaders can exhibit, while "Make it matter" emphasizes the significance of values and the
+			far-reaching impact of our actions within our community. Together, we aim to inspire delegates to take
+			charge of their own universities, advocate for community betterment, and make a meaningful difference.
+		</p>
+	</main>
+</Layout>

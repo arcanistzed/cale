@@ -1,81 +1,114 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import { t, changeLanguage, setDefaultNamespace } from "i18next";
+
+changeLanguage("en");
+
+setDefaultNamespace("home");
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+<Layout title={t("title")} description={t("description")}>
+	<img
+		src="https://static.wixstatic.com/media/f88fed_60b0352781c7423f82f5bf7a1ff3c31d~mv2.jpg/v1/fill/w_717,h_452,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/f88fed_60b0352781c7423f82f5bf7a1ff3c31d~mv2.jpg"
+		alt="Group picture of CALE attendees"
+		class="bg-mask-gradient absolute -z-10 h-full w-full object-cover opacity-20 gradient-mask-b-90"
+	/>
+	<main class="mx-auto flex h-full max-w-2xl flex-col gap-8 p-4">
+		<div class="flex flex-col items-center justify-center gap-8 pb-[25vh] pt-16">
+			<h1 class="whitespace-nowrap text-[8vmin] font-extrabold leading-normal tracking-wide text-green-800">
+				<div
+					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_1s_cubic-bezier(0.19,1,0.22,1)_forwards] after:bg-white after:content-['']"
+				>
+					<span class="flex w-[8vmin] justify-center text-primary">C</span>
+					<span>onference on</span>
+				</div>
+				<div
+					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_1s_cubic-bezier(0.19,1,0.22,1)_forwards_200ms] after:bg-white after:content-['']"
+				>
+					<span class="flex w-[8vmin] justify-center text-primary">A</span>
+					<span>dvocacy and</span>
+				</div>
+				<div
+					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_1s_cubic-bezier(0.19,1,0.22,1)_forwards_400ms] after:bg-white after:content-['']"
+				>
+					<span class="flex w-[8vmin] justify-center text-primary">L</span>
+					<span>eadership in</span>
+				</div>
+				<div
+					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_1s_cubic-bezier(0.19,1,0.22,1)_forwards_600ms] after:bg-white after:content-['']"
+				>
+					<span class="flex w-[8vmin] justify-center text-primary">E</span>
+					<span>ngineering</span>
+				</div>
+			</h1>
+			<h2 class="animate-[fade_5s_forwards] text-center text-2xl font-bold opacity-0">
+				Empower Future Engineering Leaders Together.
+			</h2>
+			<div>
+				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-green-900 opacity-0">
+					University of Ottawa
+				</h2>
+				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-green-900 opacity-0">
+					February 1st - 4th, 2024
+				</h2>
+			</div>
+		</div>
+		<p class="text-lg leading-relaxed">
+			We are delighted to invite you to the Conference on Advocacy and Leadership in Engineering (CALE) 2024!
 		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+		<p class="text-lg leading-relaxed">
+			Hosted by the Engineering Student Society Council of Ontario (ESSCO) in collaboration with the University of
+			Ottawa Engineering Student Society (uOttawa ESS), CALE is a dynamic event that aims to foster leadership,
+			inspire advocacy, and empower the next generation of engineering leaders.
+		</p>
+		<p class="text-lg leading-relaxed">
+			Join us for a transformative experience where you can participate in elections, connect with student leaders
+			from across the province, and gain valuable insights to further your own leadership journey. CALE also
+			includes the Annual General Meeting (AGM) for ESSCO, providing a platform to shape the future of this
+			influential organization.
+		</p>
+		<p class="text-lg leading-relaxed">
+			Whether you are interested in running for an ESSCO position or simply seeking inspiration for your own
+			leadership pursuits, CALE is the perfect conference for you.
+		</p>
+		<p class="text-lg leading-relaxed">
+			At CALE, we believe in empowering future engineering leaders by providing them with the tools, knowledge,
+			and connections necessary to make a positive impact. Our event highlights include:
+		</p>
+		<p class="text-lg leading-relaxed">
+			<b>Networking Opportunities:</b> Rub shoulders with student leaders, ESSCO executives, and industry professionals
+			in various social events designed to foster meaningful connections.
+		</p>
+		<p class="text-lg leading-relaxed">
+			<b>Workshop Sessions:</b> Immerse yourself in engaging and informative student-led workshops that delve into
+			leadership practices and advocacy, equipping you with valuable skills and insights.
+		</p>
+		<p class="text-lg leading-relaxed">
+			<b>Gala Dinner:</b> Attend our glamorous gala dinner, where we celebrate achievements, recognize outstanding
+			individuals, and create lasting memories with fellow attendees.
+		</p>
+		<p class="text-lg leading-relaxed">
+			<b>Career Fair:</b> Explore a diverse range of potential employment opportunities at our career fair, connecting
+			with industry professionals and organizations actively seeking talented engineering graduates.
+		</p>
+		<p class="text-lg leading-relaxed">
+			<b>ESSCO Council of VP Externals Elections:</b> Participate in the elections and play an active role in shaping
+			the future of ESSCO. This is an excellent opportunity to contribute to the Annual General Meeting (AGM) of ESSCO
+			and make your voice heard.
+		</p>
+		<p class="text-lg leading-relaxed">
+			Please note that specific details, including the schedule, locations, and additional events, will be
+			announced closer to the conference. Stay tuned for more information!
+		</p>
+		<p class="text-lg leading-relaxed">
+			We invite you to join us in empowering future engineering leaders and advocate for change within the
+			engineering community. Your support can make a world of difference. For sponsorship opportunities and
+			inquiries, please reach out to us at cale@essco.ca. Let's shape the future of engineering leadership
+			together!
+		</p>
+		<p class="text-lg leading-relaxed">
+			Don't miss out on this exceptional conference experience. Save the date, spread the word, and get ready for
+			an unforgettable CALE 2024 at the University of Ottawa. We can't wait to welcome you!
+		</p>
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>

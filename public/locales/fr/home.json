@@ -1,5 +1,33 @@
 {
 	"title": "CPLI 2024",
 	"description": "Site web pour la Conférence sur le Plaidoyer et le Leadership en Ingénierie 2024",
-	"heading": "Conférence sur le Plaidoyer et le Leadership en Ingénierie"
+	"heading": "Conférence sur le Plaidoyer et le Leadership en Ingénierie",
+	"hero": [
+		{
+			"a": "C",
+			"b": "onference sur le"
+		},
+		{
+			"a": "P",
+			"b": "laidoyer et le"
+		},
+		{
+			"a": "L",
+			"b": "eadership en"
+		},
+		{
+			"a": "I",
+			"b": "ngénierie"
+		}
+	],
+	"subtitle": "Ensemble, développons les futurs leaders en ingénierie.",
+	"location": "Université of Ottawa",
+	"dates": "1 au 4 fevrier 2024",
+	"content": [
+		"Nous sommes ravis de vous inviter à la Conférence sur la Conférence sur le Plaidoyer et le Leadership en Ingénierie (CPLI) 2024 !",
+		"Organisée par le Engineering Student Society Council of Ontario (ESSCO) en collaboration avec la Engineering Student Society de l'Université d'Ottawa (uOttawa ESS), la CPLI est un événement dynamique qui vise à favoriser le leadership, à inspirer la défense des intérêts et à habiliter la prochaine génération de leaders en génie.",
+		"Joignez-vous à nous pour vivre une expérience transformatrice où vous pourrez participer à des élections, établir des liens avec des leaders étudiants de toute la province et acquérir des connaissances précieuses qui vous aideront à poursuivre votre propre cheminement en matière de leadership. La CPLI comprend également l'assemblée générale annuelle (AGA) d'ESSCO, qui offre une plateforme pour façonner l'avenir de cette organisation influente.",
+		"Que vous souhaitiez vous porter candidat à un poste au sein d'ESSCO ou que vous soyez simplement à la recherche d'inspiration pour vos propres activités de leadership, CPLI est la conférence idéale pour vous",
+		"Au CPLI, nous croyons en l'autonomisation des futurs leaders de l'ingénierie en leur fournissant les outils, les connaissances et les connexions nécessaires pour avoir un impact positif. Les points forts de notre événement sont les suivants :"
+	]
 }

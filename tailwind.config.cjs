@@ -6,7 +6,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#505e3f",
+				secondary: "#8c6162",
+				primary: "#b85152",
 			},
 			fontFamily: {
 				sans: ["Garet Book", ...defaultTheme.fontFamily.sans],
@@ -28,7 +29,7 @@ module.exports = {
 					to: {
 						opacity: 1,
 					},
-				}
+				},
 			},
 		},
 	},

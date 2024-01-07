@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { t, changeLanguage, setDefaultNamespace } from "i18next";
 
 changeLanguage("en");
+
 setDefaultNamespace("home");
 ---
 
@@ -14,65 +15,58 @@ setDefaultNamespace("home");
 	/>
 	<main class="mx-auto flex h-full w-full max-w-2xl flex-col gap-8 p-4">
 		<div class="flex flex-col items-center justify-center gap-8 pb-[25vh] pt-16">
-			<h1 class="whitespace-nowrap text-[8vmin] font-extrabold leading-normal tracking-wide text-green-800">
+			<h1 class="whitespace-nowrap text-[8vmin] font-extrabold leading-normal tracking-wide text-secondary">
 				<div
 					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_2s_cubic-bezier(0.19,1,0.22,1)_forwards] after:bg-white after:content-['']"
 				>
-					<span class="flex w-[8vmin] justify-center text-primary">C</span>
-					<span>onference on</span>
+					<span class="flex w-[8vmin] justify-center text-primary">{t("hero.0.a")}</span>
+					<span>{t("hero.0.b")}</span>
 				</div>
 				<div
 					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_2s_cubic-bezier(0.19,1,0.22,1)_forwards_200ms] after:bg-white after:content-['']"
 				>
-					<span class="flex w-[8vmin] justify-center text-primary">A</span>
-					<span>dvocacy and</span>
+					<span class="flex w-[8vmin] justify-center text-primary">{t("hero.1.a")}</span>
+					<span>{t("hero.1.b")}</span>
 				</div>
 				<div
 					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_2s_cubic-bezier(0.19,1,0.22,1)_forwards_400ms] after:bg-white after:content-['']"
 				>
-					<span class="flex w-[8vmin] justify-center text-primary">L</span>
-					<span>eadership in</span>
+					<span class="flex w-[8vmin] justify-center text-primary">{t("hero.2.a")}</span>
+					<span>{t("hero.2.b")}</span>
 				</div>
 				<div
 					class="after:animate-uncover relative flex w-fit after:absolute after:inset-0 after:origin-right after:animate-[shrink_2s_cubic-bezier(0.19,1,0.22,1)_forwards_600ms] after:bg-white after:content-['']"
 				>
-					<span class="flex w-[8vmin] justify-center text-primary">E</span>
-					<span>ngineering</span>
+					<span class="flex w-[8vmin] justify-center text-primary">{t("hero.3.a")}</span>
+					<span>{t("hero.3.b")}</span>
 				</div>
 			</h1>
 			<h2 class="animate-[fade_5s_forwards] text-center text-2xl font-bold opacity-0">
-				Empower Future Engineering Leaders Together.
+				{t("subtitle")}
 			</h2>
 			<div>
-				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-green-900 opacity-0">
-					University of Ottawa
+				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-secondary opacity-0">
+					{t("location")}
 				</h2>
-				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-green-900 opacity-0">
-					February 1st - 4th, 2024
+				<h2 class="animate-[fade_5s_forwards] text-center text-xl font-bold text-secondary opacity-0">
+					{t("dates")}
 				</h2>
 			</div>
 		</div>
 		<p class="text-lg leading-relaxed">
-			We are delighted to invite you to the Conference on Advocacy and Leadership in Engineering (CALE) 2024!
+			{t("content.0")}
 		</p>
 		<p class="text-lg leading-relaxed">
-			Hosted by the Engineering Student Society Council of Ontario (ESSCO) in collaboration with the University of
-			Ottawa Engineering Student Society (uOttawa ESS), CALE is a dynamic event that aims to foster leadership,
-			inspire advocacy, and empower the next generation of engineering leaders.
+			{t("content.1")}
 		</p>
 		<p class="text-lg leading-relaxed">
-			Join us for a transformative experience where you can participate in elections, connect with student leaders
-			from across the province, and gain valuable insights to further your own leadership journey. CALE also
-			includes the Annual General Meeting (AGM) for ESSCO, providing a platform to shape the future of this
-			influential organization.
+			{t("content.2")}
 		</p>
 		<p class="text-lg leading-relaxed">
-			Whether you are interested in running for an ESSCO position or simply seeking inspiration for your own
-			leadership pursuits, CALE is the perfect conference for you.
+			{t("content.3")}
 		</p>
 		<p class="text-lg leading-relaxed">
-			At CALE, we believe in empowering future engineering leaders by providing them with the tools, knowledge,
-			and connections necessary to make a positive impact. Our event highlights include:
+			{t("content.4")}
 		</p>
 		<p class="text-lg leading-relaxed">
 			<b>Networking Opportunities:</b> Rub shoulders with student leaders, ESSCO executives, and industry professionals

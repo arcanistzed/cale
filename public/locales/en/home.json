@@ -1,5 +1,33 @@
 {
 	"title": "CALE 2024",
 	"description": "Website for the 2024 Conference on Advocacy & Leadership in Engineering",
-	"heading": "Conference on Advocacy & Leadership in Engineering"
+	"heading": "Conference on Advocacy & Leadership in Engineering",
+	"hero": [
+		{
+			"a": "C",
+			"b": "onference on"
+		},
+		{
+			"a": "A",
+			"b": "dvocacy and"
+		},
+		{
+			"a": "L",
+			"b": "eadership in"
+		},
+		{
+			"a": "E",
+			"b": "ngineering"
+		}
+	],
+	"subtitle": "Empower Future Engineering Leaders Together.",
+	"location": "University of Ottawa",
+	"dates": "February 1st - 4th, 2024",
+	"content": [
+		"We are delighted to invite you to the Conference on Advocacy and Leadership in Engineering (CALE) 2024!",
+		"Hosted by the Engineering Student Society Council of Ontario (ESSCO) in collaboration with the University of Ottawa Engineering Student Society (uOttawa ESS), CALE is a dynamic event that aims to foster leadership, inspire advocacy, and empower the next generation of engineering leaders.",
+		"Join us for a transformative experience where you can participate in elections, connect with student leaders from across the province, and gain valuable insights to further your own leadership journey. CALE also includes the Annual General Meeting (AGM) for ESSCO, providing a platform to shape the future of this influential organization.",
+		"Whether you are interested in running for an ESSCO position or simply seeking inspiration for your own leadership pursuits, CALE is the perfect conference for you.",
+		"At CALE, we believe in empowering future engineering leaders by providing them with the tools, knowledge, and connections necessary to make a positive impact. Our event highlights include:"
+	]
 }

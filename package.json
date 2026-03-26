@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"@astrojs/tailwind": "^6.0.2",
-		"astro": "^5.16.5",
+		"astro": "^5.18.1",
 		"astro-i18next": "^1.0.0-beta.21",
 		"astro-icon": "^0.8.0",
 		"tailwind-gradient-mask-image": "^1.0.0",
